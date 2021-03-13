@@ -1,0 +1,86 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #0a192f;
+  color: #e9f0fa;
+}
+
+nav {
+  background-color: #081425;
+}
+
+nav a {
+  color: #e9f0fa;
+}
+
+.introduction {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.introduction .container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.introduction .container p {
+  font-size: 1.2rem;
+}
+
+.introduction .container h1 {
+  font-size: 7rem;
+  padding-bottom: 2rem;
+}
+
+.introduction .container .para {
+  font-size: 1rem;
+}
+
+.work {
+  height: 70vh;
+  background-color: #081425;
+}
+
+.work .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-title,
+.card-text {
+  color: #081425;
+}
+
+.contact {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .container {
+  width: 50%;
+}
+/*# sourceMappingURL=styles.css.map */
