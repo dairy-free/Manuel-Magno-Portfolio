@@ -11,16 +11,59 @@ body {
   color: #e9f0fa;
 }
 
-nav {
-  background-color: #081425;
+.nav-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-nav a {
-  color: #e9f0fa;
+.nav-icon-container .nav-btn {
+  padding: 1rem;
+}
+
+.navbar-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.navbar-container.show-nav {
+  display: block;
+}
+
+.navbar {
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-animation-name: modalopen;
+          animation-name: modalopen;
+  -webkit-animation-duration: var(--modal-duration);
+          animation-duration: var(--modal-duration);
+}
+
+.navbar-toggler-icon {
+  color: white;
 }
 
 .introduction {
-  height: 100vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,8 +77,7 @@ nav a {
 }
 
 .introduction .container {
-  width: 70%;
-  margin: 0 auto;
+  padding-left: 1.2rem;
 }
 
 .introduction .container p {
@@ -43,7 +85,7 @@ nav a {
 }
 
 .introduction .container h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   padding-bottom: 2rem;
 }
 
@@ -52,7 +94,6 @@ nav a {
 }
 
 .work {
-  height: 70vh;
   background-color: #081425;
 }
 
@@ -60,9 +101,8 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card-title,
@@ -70,17 +110,34 @@ nav a {
   color: #081425;
 }
 
-.contact {
-  height: 50vh;
+.section-layout {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.contact .container {
-  width: 50%;
+@-webkit-keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
