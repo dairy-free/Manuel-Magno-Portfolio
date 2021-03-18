@@ -9,6 +9,7 @@ body {
           box-sizing: border-box;
   background-color: #0a192f;
   color: #e9f0fa;
+  font-family: 'Raleway', sans-serif;
 }
 
 .nav-icon-container {
@@ -76,10 +77,6 @@ body {
           justify-content: center;
 }
 
-.introduction .container {
-  padding-left: 1.2rem;
-}
-
 .introduction .container p {
   font-size: 1.2rem;
 }
@@ -105,9 +102,23 @@ body {
       flex-wrap: wrap;
 }
 
-.card-title,
-.card-text {
-  color: #081425;
+.card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5))), url(/images/breakout-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/breakout-image.jpg);
+  background-size: cover;
+  height: 200px;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-layout {
