@@ -19,9 +19,17 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  left: calc(-50vw + 50%);
+  position: relative;
+  width: 100vw;
+  -webkit-box-shadow: 0px 5px 5px;
+          box-shadow: 0px 5px 5px;
+  background-color: #09162a;
+  color: black;
 }
 
 .nav-icon-container .nav-btn {
+  color: #e9f0fa;
   padding: 1rem;
 }
 
@@ -161,6 +169,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#about-me {
+  left: calc(-50vw + 50%);
+  position: relative;
+  width: 100vw;
+  background-color: #09162a;
+  -webkit-box-shadow: 0px -5px 5px;
+          box-shadow: 0px -5px 5px;
+  color: black;
+}
+
+#about-me .container {
+  color: #e9f0fa;
 }
 
 .icon-container {
