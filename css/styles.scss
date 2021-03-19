@@ -41,7 +41,7 @@ body {
 }
 
 .navbar {
-	background-color: #fff;
+	background-color: #e9f0fa;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 	position: absolute;
@@ -59,7 +59,7 @@ body {
 // End Navbar
 
 .navbar-toggler-icon {
-	color: white;
+	color: #e9f0fa;
 }
 
 .introduction {
@@ -85,25 +85,53 @@ body {
 }
 
 .work {
-	background-color: #081425;
-
 	.container {
 		display: flex;
 		flex-wrap: wrap;
 	}
+
+	h1 {
+		margin: 0 auto;
+		padding-bottom: 2rem;
+	}
 }
 
 .card {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/breakout-image.jpg);
 	background-size: cover;
 	height: 200px;
+	margin-bottom: 2rem;
+	border-radius: 5%;
+}
+
+#breakout-card {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/breakout-image.jpg);
+}
+
+#monster-hunter-card {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/monster-hunter.jpg);
+
+	.card-body {
+		padding: 0.5rem 0.5rem;
+	}
+}
+
+#responsive-site-card {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/hawaii-image.jpg);
+
+	.card-body {
+		padding: 0.5rem 0.5rem;
+	}
 }
 
 .card-body {
 	display: flex;
-	// flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+
+.card-link {
+	color: #e9f0fa;
+	text-decoration: none;
 }
 
 .section-layout {
@@ -111,6 +139,21 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.icon-container {
+	padding: 1rem 0;
+
+	.icon {
+		padding: 0.7rem 0.3rem;
+	}
+}
+
+.contact-section {
+	a {
+		color: #e9f0fa;
+		text-decoration: none;
+	}
 }
 
 @keyframes modalopen {

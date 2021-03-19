@@ -40,7 +40,7 @@ body {
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: #e9f0fa;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -60,7 +60,7 @@ body {
 }
 
 .navbar-toggler-icon {
-  color: white;
+  color: #e9f0fa;
 }
 
 .introduction {
@@ -90,10 +90,6 @@ body {
   font-size: 1rem;
 }
 
-.work {
-  background-color: #081425;
-}
-
 .work .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,11 +98,39 @@ body {
       flex-wrap: wrap;
 }
 
+.work h1 {
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
 .card {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5))), url(/images/breakout-image.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/breakout-image.jpg);
   background-size: cover;
   height: 200px;
+  margin-bottom: 2rem;
+  border-radius: 5%;
+}
+
+#breakout-card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5))), url(/images/breakout-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/breakout-image.jpg);
+}
+
+#monster-hunter-card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5))), url(/images/monster-hunter.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/monster-hunter.jpg);
+}
+
+#monster-hunter-card .card-body {
+  padding: 0.5rem 0.5rem;
+}
+
+#responsive-site-card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5))), url(/images/hawaii-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/hawaii-image.jpg);
+}
+
+#responsive-site-card .card-body {
+  padding: 0.5rem 0.5rem;
 }
 
 .card-body {
@@ -121,6 +145,11 @@ body {
           align-items: center;
 }
 
+.card-link {
+  color: #e9f0fa;
+  text-decoration: none;
+}
+
 .section-layout {
   height: 100vh;
   display: -webkit-box;
@@ -132,6 +161,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.icon-container {
+  padding: 1rem 0;
+}
+
+.icon-container .icon {
+  padding: 0.7rem 0.3rem;
+}
+
+.contact-section a {
+  color: #e9f0fa;
+  text-decoration: none;
 }
 
 @-webkit-keyframes modalopen {
