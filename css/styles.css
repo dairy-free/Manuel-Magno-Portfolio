@@ -98,6 +98,15 @@ body {
   font-size: 1rem;
 }
 
+.work h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .work .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,6 +225,20 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .work .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  #monster-hunter-card {
+    grid-area: span 2;
+    height: 450px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

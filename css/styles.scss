@@ -92,6 +92,11 @@ body {
 }
 
 .work {
+	h1 {
+		display: flex;
+		justify-content: center;
+	}
+
 	.container {
 		display: flex;
 		justify-content: center;
@@ -190,3 +195,21 @@ body {
 		opacity: 1;
 	}
 }
+
+// Tablet View
+@media (min-width: 768px) {
+	.work {
+		.container {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			place-items: center;
+		}
+	}
+
+	#monster-hunter-card {
+		grid-area: span 2;
+		height: 450px;
+	}
+}
+
+// End Tablet View
