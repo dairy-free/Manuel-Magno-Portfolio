@@ -193,8 +193,9 @@ body {
   color: black;
 }
 
-#about-me .container {
+#about-me #about-me-container {
   color: #e9f0fa;
+  height: 50%;
 }
 
 .icon-container {
@@ -239,6 +240,36 @@ body {
   #monster-hunter-card {
     grid-area: span 2;
     height: 450px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .work .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .work .card {
+    padding: 1rem;
+    grid-area: span 2;
+    height: 450px;
+  }
+  .work .card .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .work .card .card-link {
+    padding: 0.3rem 0rem;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
