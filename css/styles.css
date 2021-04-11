@@ -195,7 +195,6 @@ body {
 
 #about-me #about-me-container {
   color: #e9f0fa;
-  height: 50%;
 }
 
 .icon-container {
@@ -270,6 +269,9 @@ body {
   .work .card .card-link {
     padding: 0.3rem 0rem;
     margin: 0 auto;
+  }
+  #about-me-container {
+    height: 50%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
