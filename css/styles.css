@@ -90,6 +90,8 @@ body {
 }
 
 .introduction .container h1 {
+  -webkit-transition: 3s;
+  transition: 3s;
   font-size: 5rem;
   padding-bottom: 2rem;
 }
@@ -184,10 +186,10 @@ body {
 }
 
 #about-me {
-  left: calc(-50vw + 50%);
+  left: calc(-50vw + 49%);
   position: relative;
-  width: 100vw;
   background-color: #09162a;
+  width: 100vw;
   -webkit-box-shadow: 0px -5px 5px;
           box-shadow: 0px -5px 5px;
   color: black;
@@ -272,6 +274,18 @@ body {
   }
   #about-me-container {
     height: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .introduction {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */

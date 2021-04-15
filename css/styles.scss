@@ -81,6 +81,7 @@ body {
 		}
 
 		h1 {
+			transition: 3s;
 			font-size: 5rem;
 			padding-bottom: 2rem;
 		}
@@ -157,16 +158,15 @@ body {
 // About Me
 
 #about-me {
-	left: calc(-50vw + 50%);
+	left: calc(-50vw + 49%);
 	position: relative;
-	width: 100vw;
 	background-color: #09162a;
+	width: 100vw;
 	box-shadow: 0px -5px 5px;
 	color: black;
 
 	#about-me-container {
 		color: #e9f0fa;
-		// height: 50%;
 	}
 }
 
@@ -244,3 +244,14 @@ body {
 }
 
 // End Tablet View
+
+// Desktop View
+@media (min-width: 1280px) {
+	.introduction {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+// End Desktop View
