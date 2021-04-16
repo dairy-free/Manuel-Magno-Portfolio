@@ -90,8 +90,8 @@ body {
 }
 
 .introduction .container h1 {
-  -webkit-transition: 3s;
-  transition: 3s;
+  -webkit-animation: fadeIn 5s;
+          animation: fadeIn 5s;
   font-size: 5rem;
   padding-bottom: 2rem;
 }
@@ -228,6 +228,29 @@ body {
   to {
     opacity: 1;
   }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
 }
 
 @media (min-width: 768px) {

@@ -81,7 +81,7 @@ body {
 		}
 
 		h1 {
-			transition: 3s;
+			animation: fadeIn 5s;
 			font-size: 5rem;
 			padding-bottom: 2rem;
 		}
@@ -187,6 +187,8 @@ body {
 
 // End About Me
 
+// Animations
+
 @keyframes modalopen {
 	from {
 		opacity: 0;
@@ -196,6 +198,21 @@ body {
 		opacity: 1;
 	}
 }
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fade-in {
+	animation: fadeIn 2s;
+}
+
+// End Animations
 
 // Tablet View
 @media (min-width: 768px) {
