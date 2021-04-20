@@ -4,7 +4,7 @@ let menuOpen = false;
 const showNav = document.getElementsByClassName('navbar-container')[0]
 console.log(showNav)
 
-// Menu Class
+// Toggles Nav Menu & Transforms Hamburger Menu
 menuBtn.addEventListener('click', () => {
   if(!menuOpen) {
     menuBtn.classList.add('open');
@@ -19,7 +19,5 @@ menuBtn.addEventListener('click', () => {
 });
 
 
-// Toggle Nav Menu
-// toggleNav.addEventListener('click', () => navBar.classList.add('show-nav'));
 
 
