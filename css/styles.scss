@@ -37,6 +37,7 @@ body {
 	background-color: rgba(0, 0, 0, 0.6);
 	display: none;
 	position: fixed;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -186,7 +187,10 @@ body {
 }
 // Hamburger Menu
 .menu-btn {
-	position: relative;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 100;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
