@@ -77,8 +77,8 @@ body {
   height: 100%;
   -webkit-animation-name: modalopen;
           animation-name: modalopen;
-  -webkit-animation-duration: var(--modal-duration);
-          animation-duration: var(--modal-duration);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .navbar-toggler-icon {
