@@ -35,17 +35,19 @@ body {
 
 .navbar-container {
   background-color: rgba(0, 0, 0, 0.6);
-  display: none;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
-.navbar-container.show-nav {
-  display: block;
+.show-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .navbar {
@@ -299,15 +301,11 @@ body {
 
 @-webkit-keyframes modalOpen {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
   }
 }
 
 @keyframes modalOpen {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
   }
 }
 
