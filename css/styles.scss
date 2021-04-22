@@ -17,6 +17,68 @@ body {
 
 // Navbar
 
+// Hamburger Menu
+.menu-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 1rem;
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger {
+	width: 25px;
+	height: 2px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+	transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 2px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+	transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before {
+	transform: translateY(-12px);
+}
+
+.menu-btn-burger::after {
+	transform: translateY(12px);
+}
+
+// Animate Hamburger Menu
+.menu-btn.open .menu-btn-burger {
+	transform: translateX(-50px);
+	background: transparent;
+	box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-burger::before {
+	transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn-burger::after {
+	transform: rotate(-45deg) translate(35px, 35px);
+}
+
+// End Hamburger Menu
+
 .nav-icon-container {
 	display: flex;
 	justify-content: flex-end;
@@ -34,20 +96,25 @@ body {
 }
 
 .navbar-container {
-	background-color: rgba(0, 0, 0, 0.6);
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	transform: translateX(100%);
-	// transition: all 1s ease-out;
+	transition: 0.3s ease-in;
+}
+
+.darken {
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+	filter: blur(5px);
 }
 
 .show-nav {
 	transform: translateX(0%);
-	// transition: all 1s ease-in;
+	transition: 0.3s ease-out;
 }
 
 .navbar {
@@ -189,67 +256,6 @@ body {
 		text-decoration: none;
 	}
 }
-// Hamburger Menu
-.menu-btn {
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 100;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding-right: 1rem;
-	width: 80px;
-	height: 80px;
-	cursor: pointer;
-	transition: all .5s ease-in-out;
-}
-
-.menu-btn-burger {
-	width: 25px;
-	height: 2px;
-	background: #fff;
-	border-radius: 5px;
-	box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-	transition: all .5s ease-in-out;
-}
-
-.menu-btn-burger::before,
-.menu-btn-burger::after {
-	content: '';
-	position: absolute;
-	width: 25px;
-	height: 2px;
-	background: #fff;
-	border-radius: 5px;
-	box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-	transition: all .5s ease-in-out;
-}
-
-.menu-btn-burger::before {
-	transform: translateY(-12px);
-}
-
-.menu-btn-burger::after {
-	transform: translateY(12px);
-}
-
-// Animate Hamburger Menu
-.menu-btn.open .menu-btn-burger {
-	transform: translateX(-50px);
-	background: transparent;
-	box-shadow: none;
-}
-
-.menu-btn.open .menu-btn-burger::before {
-	transform: rotate(45deg) translate(35px, -35px);
-}
-
-.menu-btn.open .menu-btn-burger::after {
-	transform: rotate(-45deg) translate(35px, 35px);
-}
-
-// End Hamburger Menu
 
 // End About Me
 
