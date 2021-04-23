@@ -12,6 +12,14 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.darken {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  height: 100%;
+  width: 100%;
+}
+
 .menu-btn {
   position: absolute;
   top: 0;
@@ -87,15 +95,6 @@ body {
           transform: rotate(-45deg) translate(35px, 35px);
 }
 
-.menu-shadow {
-  height: 13vh;
-  left: calc(-50vw + 50%);
-  -webkit-box-shadow: 0px 5px 5px;
-          box-shadow: 0px 5px 5px;
-  background-color: #09162a;
-  color: black;
-}
-
 .navbar-container {
   position: fixed;
   z-index: 2;
@@ -107,14 +106,6 @@ body {
           transform: translateX(100%);
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
-}
-
-.darken {
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  height: 100%;
-  width: 100%;
 }
 
 .show-nav {
@@ -153,6 +144,23 @@ body {
           animation: modalOpen 1s;
 }
 
+.navbar a {
+  color: white;
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+}
+
+.navbar button {
+  background-color: #09162a;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 150px;
+  height: 35px;
+  font-size: 1rem;
+}
+
 .navbar-toggler-icon {
   color: #e9f0fa;
 }
@@ -166,6 +174,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
