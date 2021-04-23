@@ -3,7 +3,7 @@ const menuBtn = document.getElementsByClassName('menu-btn')[0]
 let menuOpen = false;
 const showNav = document.getElementsByClassName('navbar-container')[0]
 const darkenContainer = document.getElementsByClassName('container')[0]
-const darkenNavbar = document.getElementsByClassName('nav-icon-container')[0]
+const darkenNavbar = document.getElementsByClassName('menu-shadow')[0]
 
 // Toggles Nav Menu & Transforms Hamburger Menu
 menuBtn.addEventListener('click', () => {
