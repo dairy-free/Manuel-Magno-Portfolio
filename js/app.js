@@ -11,14 +11,12 @@ menuBtn.addEventListener('click', () => {
     menuBtn.classList.add('open');
     navBar.classList.add('show-nav')
     darkenContainer.classList.add('darken')
-   
     menuOpen = true;
     
   } else {
     menuBtn.classList.remove('open');
     navBar.classList.remove('show-nav')
     darkenContainer.classList.remove('darken')
-   
     menuOpen = false;
   }
 });

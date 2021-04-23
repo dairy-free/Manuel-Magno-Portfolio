@@ -224,19 +224,19 @@ body {
 
 .card {
   background-size: cover;
-  height: 200px;
+  height: 400px;
   margin-bottom: 2rem;
   border-radius: 5%;
 }
 
 #breakout-card {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5))), url(/images/breakout-image.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/breakout-image.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.5))), url(/images/breakout-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/images/breakout-image.jpg);
 }
 
 #monster-hunter-card {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5))), url(/images/monster-hunter.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/monster-hunter.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.5))), url(/images/monster-hunter.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/images/monster-hunter.jpg);
 }
 
 #monster-hunter-card .card-body {
@@ -244,8 +244,8 @@ body {
 }
 
 #responsive-site-card {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5))), url(/images/hawaii-image.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/hawaii-image.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.5))), url(/images/hawaii-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/images/hawaii-image.jpg);
 }
 
 #responsive-site-card .card-body {
@@ -307,29 +307,6 @@ body {
 .contact-section a {
   color: #e9f0fa;
   text-decoration: none;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
 }
 
 @media (min-width: 768px) {

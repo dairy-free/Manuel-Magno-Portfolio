@@ -186,17 +186,17 @@ body {
 
 .card {
 	background-size: cover;
-	height: 200px;
+	height: 400px;
 	margin-bottom: 2rem;
 	border-radius: 5%;
 }
 
 #breakout-card {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/breakout-image.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/images/breakout-image.jpg);
 }
 
 #monster-hunter-card {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/monster-hunter.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/images/monster-hunter.jpg);
 
 	.card-body {
 		padding: 0.5rem 0.5rem;
@@ -204,7 +204,7 @@ body {
 }
 
 #responsive-site-card {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(/images/hawaii-image.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/images/hawaii-image.jpg);
 
 	.card-body {
 		padding: 0.5rem 0.5rem;
@@ -262,18 +262,18 @@ body {
 // End About Me
 
 // Animations
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
+// @keyframes fadeIn {
+// 	0% {
+// 		opacity: 0;
+// 	}
+// 	100% {
+// 		opacity: 1;
+// 	}
+// }
 
-.fade-in {
-	animation: fadeIn 2s;
-}
+// .fade-in {
+// 	animation: fadeIn 2s;
+// }
 
 // End Animations
 
