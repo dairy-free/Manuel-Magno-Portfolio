@@ -12,6 +12,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.darken-container {
+  width: 100%;
+}
+
 .darken {
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-filter: blur(5px);
@@ -93,6 +97,10 @@ body {
 .menu-btn.open .menu-btn-burger::after {
   -webkit-transform: rotate(-45deg) translate(35px, 35px);
           transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.container-overflow {
+  overflow: hidden;
 }
 
 .navbar-container {
@@ -311,15 +319,17 @@ body {
 
 @media (min-width: 768px) {
   .work .container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    place-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  #monster-hunter-card {
-    grid-area: span 2;
-    height: 450px;
+  .card {
+    width: 100%;
+    border-radius: 0;
   }
 }
 

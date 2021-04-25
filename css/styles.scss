@@ -18,12 +18,16 @@ body {
 // Navbar
 
 // Hamburger Menu
+.darken-container {
+	width: 100%;
+}
 .darken {
 	background-color: rgba(0, 0, 0, 0.8);
 	filter: blur(5px);
 	height: 100%;
 	width: 100%;
 }
+
 .menu-btn {
 	position: absolute;
 	top: 0;
@@ -84,6 +88,10 @@ body {
 }
 
 // End Hamburger Menu
+
+.container-overflow {
+	overflow: hidden;
+}
 
 .navbar-container {
 	position: fixed;
@@ -281,15 +289,14 @@ body {
 @media (min-width: 768px) {
 	.work {
 		.container {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			place-items: center;
+			display: flex;
+			flex-direction: column;
 		}
 	}
 
-	#monster-hunter-card {
-		grid-area: span 2;
-		height: 450px;
+	.card {
+		width: 100%;
+		border-radius: 0;
 	}
 }
 
