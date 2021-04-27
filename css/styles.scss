@@ -94,14 +94,14 @@ body {
 }
 
 .navbar-container {
-	position: fixed;
+	position: absolute;
 	z-index: 2;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	transform: translateX(100%);
-	transition: 0.3s ease-in;
+	// transition: 0.3s ease-in;
 }
 
 .show-nav {
@@ -197,6 +197,8 @@ body {
 	height: 400px;
 	margin-bottom: 2rem;
 	border-radius: 5%;
+	width: 100%;
+	border-radius: 0;
 }
 
 #breakout-card {
@@ -293,20 +295,10 @@ body {
 			flex-direction: column;
 		}
 	}
-
-	.card {
-		width: 100%;
-		border-radius: 0;
-	}
 }
 
 @media (min-width: 1024px) {
 	.work {
-		.container {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-		}
-
 		.card {
 			padding: 1rem;
 			grid-area: span 2;
@@ -334,10 +326,34 @@ body {
 
 // Desktop View
 @media (min-width: 1280px) {
-	.introduction {
-		width: 100%;
-		display: flex;
-		justify-content: center;
+	.menu-btn {
+		display: none;
+	}
+
+	.navbar-container {
+		transform: translateX(0%);
+		transition: none;
+	}
+
+	.navbar {
+		display: inline-block;
+		width: 20%;
+		height: 10%;
+		flex-direction: row;
+		box-shadow: none;
+		background-color: #0a192f;
+		animation: none;
+		button {
+			display: none;
+		}
+	}
+
+	.work {
+		.container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-column-gap: 2rem;
+		}
 	}
 }
 
