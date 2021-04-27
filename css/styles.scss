@@ -205,6 +205,10 @@ body {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/images/breakout-image.jpg);
 }
 
+#portfolio {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/images/portfolio.jpg);
+}
+
 #monster-hunter-card {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/images/monster-hunter.jpg);
 
@@ -337,12 +341,18 @@ body {
 
 	.navbar {
 		display: inline-block;
-		width: 20%;
+		width: 25%;
 		height: 10%;
 		flex-direction: row;
 		box-shadow: none;
 		background-color: #0a192f;
+		padding-top: 1rem;
 		animation: none;
+
+		a {
+			padding-left: 1rem;
+		}
+
 		button {
 			display: none;
 		}
