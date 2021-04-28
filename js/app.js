@@ -13,6 +13,9 @@ const body = document.getElementsByTagName('body')[0]
 
 // Toggles Nav Menu & Transforms Hamburger Menu
 menuBtn.addEventListener('click', NavMenuToggle);
+navHome.addEventListener('click', NavMenuToggle);
+navWork.addEventListener('click', NavMenuToggle);
+navAbout.addEventListener('click', NavMenuToggle);
 
 
 function NavMenuToggle(){
