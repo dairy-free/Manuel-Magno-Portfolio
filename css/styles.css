@@ -395,9 +395,30 @@ body {
   .work .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     grid-column-gap: 2rem;
+  }
+  #breakout-card {
+    position: relative;
+    width: 50%;
+    margin-left: 15%;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  #breakout-body {
+    position: absolute;
+    right: 20%;
+    margin-top: 10rem;
+    height: 20vh;
+    width: 500px;
+    background-color: #151318;
+  }
+  #breakout-links {
+    position: absolute;
+    right: 20%;
+    margin-top: 22rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

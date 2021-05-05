@@ -361,9 +361,33 @@ body {
 	.work {
 		.container {
 			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-columns: 1fr;
 			grid-column-gap: 2rem;
+			// place-items: center;
 		}
+	}
+
+	#breakout-card {
+		position: relative;
+		width: 50%;
+		margin-left: 15%;
+		display: grid;
+		place-items: center;
+	}
+
+	#breakout-body {
+		position: absolute;
+		right: 20%;
+		margin-top: 10rem;
+		height: 20vh;
+		width: 500px;
+		background-color: #151318;
+	}
+
+	#breakout-links {
+		position: absolute;
+		right: 20%;
+		margin-top: 22rem;
 	}
 }
 
