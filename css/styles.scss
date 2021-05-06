@@ -2,16 +2,40 @@ html {
 	scroll-behavior: smooth;
 }
 
+:root {
+	--main-bg: #040b15;
+	--text-color-green: #55f8ab;
+	--text-color-light: #e8e8e8;
+	--text-color-dark: #bebebe;
+}
+
 body {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	background-color: #0a192f;
-	color: #e9f0fa;
+	background-color: var(--main-bg);
+	color: var(--text-color-dark);
 	font-family: 'Raleway', sans-serif;
 }
 
 // Utility Classes
+
+.green {
+	color: var(--text-color-green);
+}
+
+.text-color-light {
+	color: var(--text-color-light);
+}
+
+.btn-outline-secondary {
+	background-color: var(--main-bg);
+	height: 50px;
+	width: 150px;
+	border-color: var(--text-color-green);
+	color: var(--text-color-green);
+	border-radius: 5px;
+}
 
 // End Utility Classes
 
@@ -46,7 +70,7 @@ body {
 .menu-btn-burger {
 	width: 25px;
 	height: 2px;
-	background: #fff;
+	background: var(--text-color-green);
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
 	transition: all .5s ease-in-out;
@@ -58,7 +82,7 @@ body {
 	position: absolute;
 	width: 25px;
 	height: 2px;
-	background: #fff;
+	background: var(--text-color-green);
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
 	transition: all .5s ease-in-out;
@@ -114,7 +138,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #09162a;
+	background-color: var(--main-bg);
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 	position: absolute;
@@ -127,20 +151,19 @@ body {
 	animation: modalOpen 1s;
 
 	a {
-		color: white;
+		color: var(--text-color-dark);
 		font-size: 1.1rem;
 		padding-bottom: 1rem;
 		text-decoration: none;
 	}
 
 	button {
-		background-color: #09162a;
-		color: white;
-		border: 2px solid white;
-		border-radius: 5px;
-		width: 150px;
-		height: 35px;
-		font-size: 1rem;
+		// background-color: #09162a;
+		// border: 2px solid white;
+		// border-radius: 5px;
+		// width: 150px;
+		// height: 35px;
+		// font-size: 1rem;
 	}
 }
 
@@ -157,6 +180,10 @@ body {
 	align-items: center;
 	justify-content: center;
 
+	h1 {
+		color: var(--text-color-light);
+	}
+
 	.container {
 		p {
 			font-size: 1.2rem;
@@ -172,18 +199,27 @@ body {
 			font-size: 1rem;
 		}
 	}
+
+	.intro-summary {
+		width: 60%;
+	}
 }
 
 .work {
 	h1 {
 		display: flex;
 		justify-content: center;
+
+		span {
+			padding-right: 0.3rem;
+		}
 	}
 
 	.container {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+		margin-top: 4rem;
 	}
 
 	h1 {
@@ -237,7 +273,7 @@ body {
 }
 
 .section-layout {
-	height: 100vh;
+	height: 70vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -246,19 +282,18 @@ body {
 // About Me
 
 #about-me {
-	left: calc(-50vw + 49%);
-	position: relative;
-	background-color: #09162a;
-	width: 100vw;
-	box-shadow: 0px -5px 5px;
-	color: black;
+	.container {
+		h1 {
+			padding-bottom: 2rem;
+		}
+	}
 
 	#about-me-container {
-		color: #e9f0fa;
 	}
 }
 
 .icon-container {
+	color: var(--text-color-light);
 	padding: 1rem 0;
 
 	.icon {
@@ -268,12 +303,23 @@ body {
 
 .contact-section {
 	a {
-		color: #e9f0fa;
+		color: var(--text-color-light);
 		text-decoration: none;
 	}
 }
 
 // End About Me
+
+// Contact Me
+#contact-me {
+	height: 40vh;
+
+	h1 {
+		padding-bottom: 2rem;
+	}
+}
+
+// End Contact Me
 
 // Animations
 // @keyframes fadeIn {
@@ -345,7 +391,6 @@ body {
 		height: 10%;
 		flex-direction: row;
 		box-shadow: none;
-		background-color: #0a192f;
 		padding-top: 1rem;
 		animation: none;
 
@@ -367,15 +412,16 @@ body {
 		}
 	}
 
-	#breakout-card {
+	.img-card {
 		position: relative;
 		width: 50%;
 		margin-left: 15%;
 		display: grid;
 		place-items: center;
+		height: 300px;
 	}
 
-	#breakout-body {
+	.card-body-left {
 		position: absolute;
 		right: 20%;
 		margin-top: 10rem;
@@ -388,6 +434,12 @@ body {
 		position: absolute;
 		right: 20%;
 		margin-top: 22rem;
+	}
+
+	#about-me,
+	#contact-me {
+		width: 29%;
+		margin: 0 auto;
 	}
 }
 

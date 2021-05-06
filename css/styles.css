@@ -2,14 +2,38 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --main-bg: #040b15;
+  --text-color-green: #55f8ab;
+  --text-color-light: #e8e8e8;
+  --text-color-dark: #bebebe;
+}
+
 body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #0a192f;
-  color: #e9f0fa;
+  background-color: var(--main-bg);
+  color: var(--text-color-dark);
   font-family: 'Raleway', sans-serif;
+}
+
+.green {
+  color: var(--text-color-green);
+}
+
+.text-color-light {
+  color: var(--text-color-light);
+}
+
+.btn-outline-secondary {
+  background-color: var(--main-bg);
+  height: 50px;
+  width: 150px;
+  border-color: var(--text-color-green);
+  color: var(--text-color-green);
+  border-radius: 5px;
 }
 
 .darken-container {
@@ -49,7 +73,7 @@ body {
 .menu-btn-burger {
   width: 25px;
   height: 2px;
-  background: #fff;
+  background: var(--text-color-green);
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -63,7 +87,7 @@ body {
   position: absolute;
   width: 25px;
   height: 2px;
-  background: #fff;
+  background: var(--text-color-green);
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -135,7 +159,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #09162a;
+  background-color: var(--main-bg);
   border-radius: 5px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -151,20 +175,10 @@ body {
 }
 
 .navbar a {
-  color: white;
+  color: var(--text-color-dark);
   font-size: 1.1rem;
   padding-bottom: 1rem;
   text-decoration: none;
-}
-
-.navbar button {
-  background-color: #09162a;
-  color: white;
-  border: 2px solid white;
-  border-radius: 5px;
-  width: 150px;
-  height: 35px;
-  font-size: 1rem;
 }
 
 .navbar-toggler-icon {
@@ -188,6 +202,10 @@ body {
           justify-content: center;
 }
 
+.introduction h1 {
+  color: var(--text-color-light);
+}
+
 .introduction .container p {
   font-size: 1.2rem;
 }
@@ -203,6 +221,10 @@ body {
   font-size: 1rem;
 }
 
+.introduction .intro-summary {
+  width: 60%;
+}
+
 .work h1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,6 +232,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.work h1 span {
+  padding-right: 0.3rem;
 }
 
 .work .container {
@@ -221,6 +247,7 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 4rem;
 }
 
 .work h1 {
@@ -283,7 +310,7 @@ body {
 }
 
 .section-layout {
-  height: 100vh;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,21 +322,12 @@ body {
           align-items: center;
 }
 
-#about-me {
-  left: calc(-50vw + 49%);
-  position: relative;
-  background-color: #09162a;
-  width: 100vw;
-  -webkit-box-shadow: 0px -5px 5px;
-          box-shadow: 0px -5px 5px;
-  color: black;
-}
-
-#about-me #about-me-container {
-  color: #e9f0fa;
+#about-me .container h1 {
+  padding-bottom: 2rem;
 }
 
 .icon-container {
+  color: var(--text-color-light);
   padding: 1rem 0;
 }
 
@@ -318,8 +336,16 @@ body {
 }
 
 .contact-section a {
-  color: #e9f0fa;
+  color: var(--text-color-light);
   text-decoration: none;
+}
+
+#contact-me {
+  height: 40vh;
+}
+
+#contact-me h1 {
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -381,7 +407,6 @@ body {
             flex-direction: row;
     -webkit-box-shadow: none;
             box-shadow: none;
-    background-color: #0a192f;
     padding-top: 1rem;
     -webkit-animation: none;
             animation: none;
@@ -399,15 +424,16 @@ body {
         grid-template-columns: 1fr;
     grid-column-gap: 2rem;
   }
-  #breakout-card {
+  .img-card {
     position: relative;
     width: 50%;
     margin-left: 15%;
     display: -ms-grid;
     display: grid;
     place-items: center;
+    height: 300px;
   }
-  #breakout-body {
+  .card-body-left {
     position: absolute;
     right: 20%;
     margin-top: 10rem;
@@ -419,6 +445,11 @@ body {
     position: absolute;
     right: 20%;
     margin-top: 22rem;
+  }
+  #about-me,
+  #contact-me {
+    width: 29%;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
