@@ -37,6 +37,27 @@ body {
 	border-radius: 5px;
 }
 
+.h1-line {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 1rem;
+}
+
+.h1-line::after {
+	position: absolute;
+	right: 10px;
+	bottom: 50px;
+	content: '';
+	background-color: var(--text-color-dark);
+	height: 1px;
+	width: 34%;
+}
+
+.numbers-padding {
+	padding-right: 0.5rem;
+}
+
 // End Utility Classes
 
 // Navbar
@@ -199,22 +220,12 @@ body {
 			font-size: 1rem;
 		}
 	}
-
-	.intro-summary {
-		width: 60%;
-	}
 }
 
 .work {
-	h1 {
-		display: flex;
-		justify-content: center;
-
-		span {
-			padding-right: 0.3rem;
-		}
+	h1::after {
+		width: 42%;
 	}
-
 	.container {
 		display: flex;
 		justify-content: center;
@@ -312,10 +323,23 @@ body {
 
 // Contact Me
 #contact-me {
-	height: 40vh;
+	height: 50vh;
+
+	h1::after {
+		width: 27%;
+	}
 
 	h1 {
 		padding-bottom: 2rem;
+	}
+
+	p {
+		padding-bottom: 1rem;
+	}
+
+	button {
+		display: block;
+		margin: 0 auto;
 	}
 }
 
@@ -387,9 +411,10 @@ body {
 
 	.navbar {
 		display: inline-block;
-		width: 25%;
+		width: 35%;
 		height: 10%;
-		flex-direction: row;
+		padding-left: 4rem;
+		font-size: 0.9rem;
 		box-shadow: none;
 		padding-top: 1rem;
 		animation: none;
