@@ -57,10 +57,6 @@ body {
   width: 34%;
 }
 
-.numbers-padding {
-  padding-right: 0.5rem;
-}
-
 .darken-container {
   width: 100%;
 }
@@ -204,6 +200,19 @@ body {
   font-size: 1.1rem;
   padding-bottom: 1rem;
   text-decoration: none;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+.navbar ul li a span {
+  padding: 0 0.5rem;
+}
+
+.navbar button {
+  margin-top: 2rem;
 }
 
 .navbar-toggler-icon {
@@ -383,6 +392,12 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #about-me,
+  #contact-me,
+  .h1-work {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -405,6 +420,12 @@ body {
   }
   .work .card .card-link {
     padding: 0.3rem 0rem;
+    margin: 0 auto;
+  }
+  #about-me,
+  #contact-me,
+  .h1-work {
+    width: 48%;
     margin: 0 auto;
   }
   #about-me-container {
@@ -440,39 +461,19 @@ body {
   .navbar button {
     display: none;
   }
-  .work .container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-column-gap: 2rem;
-  }
-  .img-card {
-    position: relative;
-    width: 50%;
-    margin-left: 15%;
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-    height: 300px;
-  }
-  .card-body-left {
-    position: absolute;
-    right: 20%;
-    margin-top: 10rem;
-    height: 20vh;
-    width: 500px;
-    background-color: #151318;
-  }
-  #breakout-links {
-    position: absolute;
-    right: 20%;
-    margin-top: 22rem;
-  }
   #about-me,
-  #contact-me {
-    width: 29%;
+  #contact-me,
+  .h1-work {
+    width: 38%;
     margin: 0 auto;
+  }
+  .breakout-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -54,10 +54,6 @@ body {
 	width: 34%;
 }
 
-.numbers-padding {
-	padding-right: 0.5rem;
-}
-
 // End Utility Classes
 
 // Navbar
@@ -178,13 +174,17 @@ body {
 		text-decoration: none;
 	}
 
+	ul li {
+		list-style-type: none;
+		padding: 0.5rem;
+	}
+
+	ul li a span {
+		padding: 0 0.5rem;
+	}
+
 	button {
-		// background-color: #09162a;
-		// border: 2px solid white;
-		// border-radius: 5px;
-		// width: 150px;
-		// height: 35px;
-		// font-size: 1rem;
+		margin-top: 2rem;
 	}
 }
 
@@ -369,6 +369,13 @@ body {
 			flex-direction: column;
 		}
 	}
+
+	#about-me,
+	#contact-me,
+	.h1-work {
+		width: 60%;
+		margin: 0 auto;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -389,6 +396,13 @@ body {
 				margin: 0 auto;
 			}
 		}
+	}
+
+	#about-me,
+	#contact-me,
+	.h1-work {
+		width: 48%;
+		margin: 0 auto;
 	}
 
 	#about-me-container {
@@ -430,41 +444,24 @@ body {
 
 	.work {
 		.container {
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-column-gap: 2rem;
+			// display: grid;
+			// grid-template-columns: 1fr;
+			// grid-column-gap: 2rem;
 			// place-items: center;
 		}
 	}
 
-	.img-card {
-		position: relative;
-		width: 50%;
-		margin-left: 15%;
-		display: grid;
-		place-items: center;
-		height: 300px;
-	}
-
-	.card-body-left {
-		position: absolute;
-		right: 20%;
-		margin-top: 10rem;
-		height: 20vh;
-		width: 500px;
-		background-color: #151318;
-	}
-
-	#breakout-links {
-		position: absolute;
-		right: 20%;
-		margin-top: 22rem;
-	}
-
 	#about-me,
-	#contact-me {
-		width: 29%;
+	#contact-me,
+	.h1-work {
+		width: 38%;
 		margin: 0 auto;
+	}
+
+	.breakout-container {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-template-rows: 1fr;
 	}
 }
 
