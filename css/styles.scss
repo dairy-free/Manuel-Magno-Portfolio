@@ -58,6 +58,10 @@ body {
 	background-color: transparent;
 }
 
+.desktop-content {
+	display: none;
+}
+
 // End Utility Classes
 
 // Navbar
@@ -241,6 +245,18 @@ body {
 	h1 {
 		margin: 0 auto;
 		padding-bottom: 2rem;
+	}
+
+	.card-title {
+		padding-bottom: 1rem;
+	}
+
+	.reverse-img-container .reverse-img-card,
+	.reverse-content,
+	.img-container,
+	.img-card,
+	.content {
+		border-radius: 10px;
 	}
 }
 
@@ -458,6 +474,14 @@ body {
 
 	//  Work section Grid Layout
 
+	.desktop-content {
+		display: block;
+	}
+
+	.mobile-content {
+		display: none;
+	}
+
 	.card-container {
 		display: grid;
 		grid-template-columns: 2fr 1fr;
@@ -477,7 +501,6 @@ body {
 		.img-card,
 		.content {
 			grid-row: 1 / 2;
-			border-radius: 10px;
 		}
 
 		.img-card {
@@ -512,7 +535,6 @@ body {
 		.reverse-img-card,
 		.reverse-content {
 			grid-row: 1 / 2;
-			border-radius: 10px;
 		}
 
 		.reverse-img-card {

@@ -61,6 +61,10 @@ body {
   background-color: transparent;
 }
 
+.desktop-content {
+  display: none;
+}
+
 .darken-container {
   width: 100%;
 }
@@ -280,6 +284,18 @@ body {
   padding-bottom: 2rem;
 }
 
+.work .card-title {
+  padding-bottom: 1rem;
+}
+
+.work .reverse-img-container .reverse-img-card,
+.work .reverse-content,
+.work .img-container,
+.work .img-card,
+.work .content {
+  border-radius: 10px;
+}
+
 .card {
   background-size: cover;
   height: 400px;
@@ -477,6 +493,12 @@ body {
   .intro-summary {
     width: 60%;
   }
+  .desktop-content {
+    display: block;
+  }
+  .mobile-content {
+    display: none;
+  }
   .card-container {
     display: -ms-grid;
     display: grid;
@@ -497,7 +519,6 @@ body {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
-    border-radius: 10px;
   }
   .img-container .img-card {
     z-index: -1;
@@ -535,7 +556,6 @@ body {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
-    border-radius: 10px;
   }
   .reverse-img-container .reverse-img-card {
     grid-column: 2 / -2;
