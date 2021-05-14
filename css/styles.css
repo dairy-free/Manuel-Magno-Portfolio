@@ -47,6 +47,16 @@ body {
   padding-left: 1rem;
 }
 
+.h1-line::after {
+  position: absolute;
+  right: 10px;
+  bottom: 50px;
+  content: '';
+  background-color: var(--text-color-dark);
+  height: 1px;
+  width: 34%;
+}
+
 .card {
   background-color: transparent;
 }
@@ -474,6 +484,7 @@ body {
         grid-template-columns: 2fr 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
+    margin-bottom: 5rem;
   }
   .card-title {
     margin: auto auto;
@@ -486,6 +497,7 @@ body {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
+    border-radius: 10px;
   }
   .img-container .img-card {
     z-index: -1;
@@ -504,6 +516,11 @@ body {
         align-self: center;
     background-color: #151318;
   }
+  .img-container .content p {
+    padding: 0rem .7rem;
+    padding-top: 1rem;
+    margin: 0;
+  }
   .reverse-card-container {
     display: -ms-grid;
     display: grid;
@@ -511,18 +528,20 @@ body {
         grid-template-columns: 1fr 2fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
+    margin-bottom: 5rem;
   }
   .reverse-img-container .reverse-img-card,
   .reverse-img-container .reverse-content {
-    -ms-grid-row: 2;
+    -ms-grid-row: 1;
     -ms-grid-row-span: 1;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
+    border-radius: 10px;
   }
   .reverse-img-container .reverse-img-card {
-    grid-column: -2 / 3;
+    grid-column: 2 / -2;
     -o-object-fit: cover;
        object-fit: cover;
-    width: 60%;
+    width: 90%;
     z-index: -1;
   }
   .reverse-img-container .reverse-content {
@@ -534,6 +553,11 @@ body {
         -ms-grid-row-align: center;
         align-self: center;
     background-color: #151318;
+  }
+  .reverse-img-container .reverse-content p {
+    padding: 0rem .7rem;
+    padding-top: 1rem;
+    margin: 0;
   }
   #about-me,
   #contact-me,
