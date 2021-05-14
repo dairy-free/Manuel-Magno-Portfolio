@@ -399,7 +399,7 @@ body {
 	}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 993px) {
 	.work {
 		.card {
 			padding: 1rem;
@@ -407,13 +407,17 @@ body {
 			height: 450px;
 
 			.card-body {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
+				width: 30%;
+				margin: 0 auto;
 			}
 
 			.card-link {
 				padding: 0.3rem 0rem;
+				margin: 0 auto;
+			}
+
+			.content-para {
+				width: 80%;
 				margin: 0 auto;
 			}
 		}
