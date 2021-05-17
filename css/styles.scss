@@ -438,7 +438,8 @@ body {
 // End Tablet View
 
 // Desktop View
-@media (min-width: 1280px) {
+
+@media (min-width: 1200px) {
 	.menu-btn {
 		display: none;
 	}
@@ -450,7 +451,7 @@ body {
 	}
 
 	.navbar {
-		width: 45%;
+		width: 50%;
 		height: 10%;
 		padding-left: 4rem;
 		font-size: 0.9rem;
@@ -567,12 +568,21 @@ body {
 	#about-me,
 	#contact-me,
 	.h1-work {
-		width: 38%;
+		max-width: 44%;
 		margin: 0 auto;
 	}
 
 	.span-h1 {
 		padding-right: 1rem;
+	}
+}
+
+@media (min-width: 1400px) {
+	#about-me,
+	#contact-me,
+	.h1-work {
+		max-width: 38%;
+		margin: 0 auto;
 	}
 }
 
