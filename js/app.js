@@ -4,6 +4,7 @@ let menuOpen = false;
 const showNav = document.getElementsByClassName('navbar-container')[0]
 const navWork = document.getElementsByClassName('nav-work')[0]
 const navAbout = document.getElementsByClassName('nav-about')[0]
+const navContact = document.getElementsByClassName('nav-contact')[0]
 const darkenContainer = document.getElementsByClassName('darken-container')[0]
 const body = document.getElementsByTagName('body')[0]
 
@@ -14,6 +15,7 @@ const body = document.getElementsByTagName('body')[0]
 menuBtn.addEventListener('click', NavMenuToggle);
 navWork.addEventListener('click', NavMenuToggle);
 navAbout.addEventListener('click', NavMenuToggle);
+navContact.addEventListener('click', NavMenuToggle);
 
 
 function NavMenuToggle(){
