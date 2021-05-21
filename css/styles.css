@@ -38,12 +38,6 @@ body {
 
 .h1-line {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   padding-left: 1rem;
 }
 
@@ -54,7 +48,7 @@ body {
   content: '';
   background-color: var(--text-color-dark);
   height: 1px;
-  width: 34%;
+  width: 25%;
 }
 
 .card {
@@ -263,24 +257,7 @@ body {
   font-size: 1rem;
 }
 
-.work h1::after {
-  width: 42%;
-}
-
-.work .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 4rem;
-}
-
 .work h1 {
-  margin: 0 auto;
   padding-bottom: 2rem;
 }
 
@@ -385,10 +362,6 @@ body {
   height: 50vh;
 }
 
-#contact-me h1::after {
-  width: 27%;
-}
-
 #contact-me h1 {
   padding-bottom: 2rem;
 }
@@ -400,6 +373,18 @@ body {
 #contact-me button {
   display: block;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .h1-line {
+    max-width: 80%;
+  }
+  .h1-line::after {
+    width: 30%;
+  }
+  #contact-me h1::after {
+    width: 25%;
+  }
 }
 
 @media (min-width: 768px) {
