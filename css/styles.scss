@@ -222,7 +222,6 @@ body {
 		}
 
 		h1 {
-			animation: fadeIn 5s;
 			font-size: 5rem;
 			padding-bottom: 2rem;
 		}
@@ -355,18 +354,19 @@ body {
 // End Contact Me
 
 // Animations
-// @keyframes fadeIn {
-// 	0% {
-// 		opacity: 0;
-// 	}
-// 	100% {
-// 		opacity: 1;
-// 	}
-// }
 
-// .fade-in {
-// 	animation: fadeIn 2s;
-// }
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fade-in {
+	animation: fadeIn 3s;
+}
 
 // End Animations
 
