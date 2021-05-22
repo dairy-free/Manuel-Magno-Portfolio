@@ -56,9 +56,15 @@ const options = {
 
 const observer = new IntersectionObserver(function(entries, observer ) {
   entries.forEach(entry => {
-    // console.log(entry.target)
-    // sections.classList.add('fade-in')
 
+    if(!entry.isIntersecting) {
+      return;
+    }
+
+    console.log(entry)
+    entry.target.classList.toggle('fade-in')
+    observer.unobserve(entry.target);
+    
   })
 }, options);
 
