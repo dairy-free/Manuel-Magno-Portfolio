@@ -19,6 +19,15 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.scroll-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
 .green {
   color: var(--text-color-green);
 }
@@ -57,6 +66,16 @@ body {
 
 .desktop-content {
   display: none;
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 280ms ease-in;
+  transition: opacity 280ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
 }
 
 .darken-container {
@@ -187,14 +206,11 @@ body {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: absolute;
-  overflow: hidden;
   top: 0;
   right: 0;
   max-width: 100%;
   width: 70%;
   height: 100%;
-  -webkit-animation: modalOpen 1s;
-          animation: modalOpen 1s;
 }
 
 .navbar a {
@@ -371,29 +387,6 @@ body {
 #contact-me button {
   display: block;
   margin: 0 auto;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  -webkit-animation: fadeIn 3s;
-          animation: fadeIn 3s;
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {

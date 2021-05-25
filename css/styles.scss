@@ -18,6 +18,15 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+.scroll-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
 // Utility Classes
 
 .green {
@@ -62,6 +71,15 @@ body {
 
 .desktop-content {
 	display: none;
+}
+
+.fade-in {
+	opacity: 0;
+	transition: opacity 280ms ease-in;
+}
+
+.fade-in.appear {
+	opacity: 1;
 }
 
 // End Utility Classes
@@ -153,7 +171,6 @@ body {
 	right: 0;
 	bottom: 0;
 	transform: translateX(100%);
-	// transition: 0.3s ease-in;
 }
 
 .show-nav {
@@ -170,13 +187,11 @@ body {
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 	position: absolute;
-	overflow: hidden;
 	top: 0;
 	right: 0;
 	max-width: 100%;
 	width: 70%;
 	height: 100%;
-	animation: modalOpen 1s;
 
 	a {
 		color: var(--text-color-dark);
@@ -352,23 +367,6 @@ body {
 }
 
 // End Contact Me
-
-// Animations
-
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-.fade-in {
-	animation: fadeIn 3s;
-}
-
-// End Animations
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
 	.h1-line {
