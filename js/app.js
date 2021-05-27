@@ -38,51 +38,59 @@ function NavMenuToggle(){
 }
 
 
-// Observer 
+// Observers 
 
 const sections = document.querySelectorAll('.sections');
 const introSection = document.getElementById('introduction');
-const workSection = document.getElementById('work');
-const aboutSection = document.getElementById('about-me');
-const contactSection = document.getElementById('contact-me');
+const nav = document.getElementsByClassName('navbar')[0];
+const faders = document.querySelectorAll(".fade-in");
+const sliders = document.getElementsByClassName('slide-in')[0];
 
 
 
 
-// const options = {
-//   threshold: 0,
-//   rootMargin: "-150px"
-// };
 
-// const observer = new IntersectionObserver(function(entries, observer ) {
-//   entries.forEach(entry => {
+// Nav and Intro 
 
-//     if(!entry.isIntersecting) {
-//       return;
-//     }
+const options = {
+  threshold: 0,
+  rootMargin: "0px"
+};
 
-//     console.log(entry)
-//     entry.target.classList.toggle('fade-in')
-//     observer.unobserve(entry.target);
+const observer = new IntersectionObserver(function(entries, observer ) {
+  entries.forEach(entry => {
+
+    if(!entry.isIntersecting) {
+      return;
+
+    } else {
+
+      entry.target.classList.add('appear')
+      observer.unobserve(entry.target);
+
+    }
+
+   
     
-//   })
-// }, options);
+  })
+}, options);
 
-// sections.forEach(section => {
-//     observer.observe(section);
+// sliders.forEach(slider => {
+//   observer.observe(slider);
 // });
 
-// observer.observe(introSection)
+
+observer.observe(nav)
 
 
-// Observer section 
+// Body 
 
 const appearOptions = {
-  threshold: 0,
+  threshold: 0.3,
   rootMargin: "0px 0px 0px 0px"
 };
 
-const faders = document.querySelectorAll(".fade-in");
+
 
 const appearOnScroll = new IntersectionObserver(function(
   entries,
@@ -91,8 +99,9 @@ const appearOnScroll = new IntersectionObserver(function(
   entries.forEach(entry => {
     if (!entry.isIntersecting) {
       return;
+
     } else {
-      console.log(entry)
+      
       entry.target.classList.add("appear");
       appearOnScroll.unobserve(entry.target);
     }

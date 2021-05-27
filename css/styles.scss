@@ -50,19 +50,27 @@ body {
 	position: relative;
 	// display: flex;
 	// justify-content: flex-start;
-	// max-width: 85%;
+	max-width: 80%;
 	padding-left: 1rem;
 }
 
 .h1-line::after {
 	position: absolute;
-	right: 10px;
+	right: 2%;
 	bottom: 50px;
 	content: '';
 	background-color: var(--text-color-dark);
 	height: 1px;
-	width: 25%;
+	width: 23%;
 	// max-width: 40%;
+}
+
+#contact-me {
+	h1::after {
+		width: 18%;
+		right: 0.1%;
+		// max-width: 35%;
+	}
 }
 
 .card {
@@ -75,10 +83,19 @@ body {
 
 .fade-in {
 	opacity: 0;
-	transition: opacity 280ms ease-in;
+	transition: opacity 450ms ease-in;
 }
 
 .fade-in.appear {
+	opacity: 1;
+}
+
+.from-top {
+	transition: opacity 250ms ease-in, transform 550ms ease-in;
+	opacity: 0;
+}
+.from-top.appear {
+	transform: translateX(0);
 	opacity: 1;
 }
 
@@ -368,18 +385,24 @@ body {
 
 // End Contact Me
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 473px) and (max-width: 767px) {
 	.h1-line {
-		max-width: 80%;
+		max-width: 90%;
 	}
 
 	.h1-line::after {
-		width: 30%;
+		width: 43%;
+	}
+
+	#about-me {
+		h1::after {
+			// width: 20%;
+		}
 	}
 
 	#contact-me {
 		h1::after {
-			width: 25%;
+			width: 38%;
 		}
 	}
 }
@@ -398,6 +421,23 @@ body {
 	.h1-work {
 		width: 60%;
 		margin: 0 auto;
+	}
+
+	#work {
+		.h1-work {
+			width: 52%;
+		}
+		h1::after {
+			width: 35%;
+		}
+	}
+
+	.h1-line::after {
+		width: 26%;
+	}
+
+	#about-me {
+		width: 62%;
 	}
 }
 
@@ -460,6 +500,7 @@ body {
 		box-shadow: none;
 		padding-top: 1rem;
 		animation: none;
+		transform: translateY(-60%);
 
 		ul {
 			display: flex;
@@ -570,8 +611,14 @@ body {
 	#about-me,
 	#contact-me,
 	.h1-work {
-		max-width: 44%;
+		max-width: 50%;
 		margin: 0 auto;
+	}
+
+	#work {
+		.h1-work {
+			width: 40%;
+		}
 	}
 
 	.span-h1 {
@@ -580,11 +627,27 @@ body {
 }
 
 @media (min-width: 1400px) {
-	#about-me,
-	#contact-me,
-	.h1-work {
-		max-width: 38%;
-		margin: 0 auto;
+	#work {
+		.h1-work {
+			width: 40%;
+		}
+
+		h1::after {
+			width: 43%;
+		}
+	}
+
+	#about-me {
+		h1::after {
+			width: 35%;
+		}
+	}
+
+	#contact-me {
+		h1::after {
+			width: 30%;
+			right: 0.1%;
+		}
 	}
 }
 
