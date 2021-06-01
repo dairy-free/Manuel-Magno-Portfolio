@@ -66,6 +66,10 @@ body {
   right: 0.1%;
 }
 
+#contact-me a {
+  text-decoration: none;
+}
+
 .card {
   background-color: transparent;
 }
@@ -492,8 +496,8 @@ body {
     transition: none;
   }
   .navbar {
-    width: 50%;
-    height: 10%;
+    width: 60%;
+    height: 15%;
     padding-left: 4rem;
     font-size: 0.9rem;
     -webkit-box-shadow: none;
@@ -517,7 +521,9 @@ body {
     padding-left: 1rem;
   }
   .navbar button {
-    display: none;
+    width: 100px;
+    height: 30px;
+    margin: 0;
   }
   .intro-summary {
     width: 60%;

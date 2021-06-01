@@ -71,6 +71,10 @@ body {
 		right: 0.1%;
 		// max-width: 35%;
 	}
+
+	a {
+		text-decoration: none;
+	}
 }
 
 .card {
@@ -493,8 +497,8 @@ body {
 	}
 
 	.navbar {
-		width: 50%;
-		height: 10%;
+		width: 60%;
+		height: 15%;
 		padding-left: 4rem;
 		font-size: 0.9rem;
 		box-shadow: none;
@@ -512,7 +516,9 @@ body {
 		}
 
 		button {
-			display: none;
+			width: 100px;
+			height: 30px;
+			margin: 0;
 		}
 	}
 

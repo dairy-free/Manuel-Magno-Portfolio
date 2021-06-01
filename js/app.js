@@ -14,14 +14,15 @@ const scrollContainer = document.getElementsByClassName('scroll-container')[0]
 
 // Toggles Nav Menu & Transforms Hamburger Menu
 menuBtn.addEventListener('click', NavMenuToggle);
-navWork.addEventListener('click', NavMenuToggle);
-navAbout.addEventListener('click', NavMenuToggle);
-navContact.addEventListener('click', NavMenuToggle);
+navWork.addEventListener('click', closeMenu);
+navAbout.addEventListener('click', closeMenu);
+navContact.addEventListener('click', closeMenu);
 
 
 function NavMenuToggle(){
 
-  if(!menuOpen) {
+  if( menuOpen === false ) {
+    
     menuBtn.classList.add('open');
     navBar.classList.add('show-nav')
     darkenContainer.classList.add('darken')
@@ -29,12 +30,23 @@ function NavMenuToggle(){
     menuOpen = true;
     
   } else {
-    menuBtn.classList.remove('open');
-    navBar.classList.remove('show-nav')
-    darkenContainer.classList.remove('darken')
-    scrollContainer.style.overflow = "visible";
-    menuOpen = false;
+
+    closeMenu()
+
   }
+  
+  
+
+}
+
+function closeMenu() {
+  
+  menuBtn.classList.remove('open');
+  navBar.classList.remove('show-nav')
+  darkenContainer.classList.remove('darken')
+  scrollContainer.style.overflow = "visible";
+  menuOpen = false;
+
 }
 
 
