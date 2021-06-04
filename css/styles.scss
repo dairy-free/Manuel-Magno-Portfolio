@@ -48,8 +48,6 @@ body {
 
 .h1-line {
 	position: relative;
-	// display: flex;
-	// justify-content: flex-start;
 	max-width: 80%;
 	padding-left: 1rem;
 }
@@ -62,14 +60,12 @@ body {
 	background-color: var(--text-color-dark);
 	height: 1px;
 	width: 23%;
-	// max-width: 40%;
 }
 
 #contact-me {
 	h1::after {
 		width: 18%;
 		right: 0.1%;
-		// max-width: 35%;
 	}
 
 	a {
@@ -345,9 +341,6 @@ body {
 			padding-bottom: 2rem;
 		}
 	}
-
-	#about-me-container {
-	}
 }
 
 .icon-container {
@@ -373,7 +366,6 @@ body {
 	height: 50vh;
 
 	h1 {
-		// width: 100%;
 		padding-bottom: 2rem;
 	}
 
@@ -396,12 +388,6 @@ body {
 
 	.h1-line::after {
 		width: 43%;
-	}
-
-	#about-me {
-		h1::after {
-			// width: 20%;
-		}
 	}
 
 	#contact-me {

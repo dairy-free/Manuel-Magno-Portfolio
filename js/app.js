@@ -1,7 +1,6 @@
 const navBar = document.getElementsByClassName('navbar-container')[0]
 const menuBtn = document.getElementsByClassName('menu-btn')[0]
 let menuOpen = false;
-const showNav = document.getElementsByClassName('navbar-container')[0]
 const navWork = document.getElementsByClassName('nav-work')[0]
 const navAbout = document.getElementsByClassName('nav-about')[0]
 const navContact = document.getElementsByClassName('nav-contact')[0]
@@ -62,7 +61,7 @@ const sliders = document.getElementsByClassName('slide-in')[0];
 
 
 
-// Nav and Intro 
+// Nav and Intro Section
 
 const options = {
   threshold: 0,
@@ -86,11 +85,6 @@ const observer = new IntersectionObserver(function(entries, observer ) {
     
   })
 }, options);
-
-// sliders.forEach(slider => {
-//   observer.observe(slider);
-// });
-
 
 observer.observe(nav)
 
