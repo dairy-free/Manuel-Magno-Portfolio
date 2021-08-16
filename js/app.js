@@ -43,7 +43,8 @@ function closeMenu() {
   menuBtn.classList.remove('open');
   navBar.classList.remove('show-nav')
   darkenContainer.classList.remove('darken')
-  scrollContainer.style.overflow = "visible";
+  scrollContainer.style.overflowY = "visible";
+  scrollContainer.style.overflowX = "hidden";
   menuOpen = false;
 
 }
