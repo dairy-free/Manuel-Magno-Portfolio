@@ -46,33 +46,6 @@ body {
 	border-radius: 5px;
 }
 
-.h1-line {
-	position: relative;
-	max-width: 80%;
-	padding-left: 1rem;
-}
-
-.h1-line::after {
-	position: absolute;
-	right: 2%;
-	bottom: 50px;
-	content: '';
-	background-color: var(--text-color-dark);
-	height: 1px;
-	width: 23%;
-}
-
-#contact-me {
-	h1::after {
-		width: 18%;
-		right: 0.1%;
-	}
-
-	a {
-		text-decoration: none;
-	}
-}
-
 .card {
 	background-color: transparent;
 }
@@ -97,6 +70,11 @@ body {
 .from-top.appear {
 	transform: translateX(0);
 	opacity: 1;
+}
+
+.h1-line {
+	display: flex;
+	justify-content: center;
 }
 
 // End Utility Classes
@@ -265,6 +243,8 @@ body {
 }
 
 .work {
+	margin-bottom: 8rem;
+
 	h1 {
 		padding-bottom: 2rem;
 	}
@@ -363,7 +343,8 @@ body {
 
 // Contact Me
 #contact-me {
-	height: 50vh;
+	height: 40vh;
+	margin-top: 5rem;
 
 	h1 {
 		padding-bottom: 2rem;
@@ -380,22 +361,6 @@ body {
 }
 
 // End Contact Me
-
-@media screen and (min-width: 473px) and (max-width: 767px) {
-	.h1-line {
-		max-width: 90%;
-	}
-
-	.h1-line::after {
-		width: 43%;
-	}
-
-	#contact-me {
-		h1::after {
-			width: 38%;
-		}
-	}
-}
 
 // Tablet View
 @media (min-width: 768px) {
@@ -420,10 +385,6 @@ body {
 		h1::after {
 			width: 35%;
 		}
-	}
-
-	.h1-line::after {
-		width: 26%;
 	}
 
 	#about-me {

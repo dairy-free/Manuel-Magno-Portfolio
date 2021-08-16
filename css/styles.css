@@ -45,31 +45,6 @@ body {
   border-radius: 5px;
 }
 
-.h1-line {
-  position: relative;
-  max-width: 80%;
-  padding-left: 1rem;
-}
-
-.h1-line::after {
-  position: absolute;
-  right: 2%;
-  bottom: 50px;
-  content: '';
-  background-color: var(--text-color-dark);
-  height: 1px;
-  width: 23%;
-}
-
-#contact-me h1::after {
-  width: 18%;
-  right: 0.1%;
-}
-
-#contact-me a {
-  text-decoration: none;
-}
-
 .card {
   background-color: transparent;
 }
@@ -100,6 +75,15 @@ body {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   opacity: 1;
+}
+
+.h1-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .darken-container {
@@ -295,6 +279,10 @@ body {
   font-size: 1rem;
 }
 
+.work {
+  margin-bottom: 8rem;
+}
+
 .work h1 {
   padding-bottom: 2rem;
 }
@@ -397,7 +385,8 @@ body {
 }
 
 #contact-me {
-  height: 50vh;
+  height: 40vh;
+  margin-top: 5rem;
 }
 
 #contact-me h1 {
@@ -411,18 +400,6 @@ body {
 #contact-me button {
   display: block;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 473px) and (max-width: 767px) {
-  .h1-line {
-    max-width: 90%;
-  }
-  .h1-line::after {
-    width: 43%;
-  }
-  #contact-me h1::after {
-    width: 38%;
-  }
 }
 
 @media (min-width: 768px) {
@@ -446,9 +423,6 @@ body {
   }
   #work h1::after {
     width: 35%;
-  }
-  .h1-line::after {
-    width: 26%;
   }
   #about-me {
     width: 62%;
