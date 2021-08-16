@@ -354,9 +354,16 @@ body {
 		padding-bottom: 1rem;
 	}
 
-	button {
-		display: block;
-		margin: 0 auto;
+	.btn-container {
+		display: flex;
+		justify-content: center;
+
+		button a:visited,
+		a:hover,
+		a:active,
+		a:link {
+			color: var(--text-color-green);
+		}
 	}
 }
 

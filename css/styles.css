@@ -397,9 +397,20 @@ body {
   padding-bottom: 1rem;
 }
 
-#contact-me button {
-  display: block;
-  margin: 0 auto;
+#contact-me .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact-me .btn-container button a:visited,
+#contact-me .btn-container a:hover,
+#contact-me .btn-container a:active,
+#contact-me .btn-container a:link {
+  color: var(--text-color-green);
 }
 
 @media (min-width: 768px) {
